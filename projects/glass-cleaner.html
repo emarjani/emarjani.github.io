@@ -310,7 +310,7 @@
                         </li>
 
                         <li>
-                            Built and tested the prototype, performed hardware bring up,
+                            Built and tested the prototype, performed hardware bring-up,
                             debugged electrical and firmware issues, and refined the design
                             based on test results.
                         </li>
@@ -335,61 +335,88 @@
                     <h3>System Architecture</h3>
 
                     <p>
-                        The custom controller combined power distribution, embedded
-                        processing, sensing, communication, and motor interfaces within
-                        a single integrated control platform.
+                        The system architecture separates sensing and user commands from embedded
+                        decision-making, motor control, and power distribution.
                     </p>
 
-                    <div class="project-flow">
+                    <div class="project-architecture">
 
-                        <div class="project-flow-step">
-                            <strong>1</strong>
-                            <span>Robot Power Input</span>
+                        <div class="architecture-column">
+
+                            <h4>Inputs</h4>
+
+                            <div class="project-flow-step">
+                                <strong>01</strong>
+                                <span>Edge and Position Sensors</span>
+                            </div>
+
+                            <div class="project-flow-step">
+                                <strong>02</strong>
+                                <span>Bluetooth and Infrared Commands</span>
+                            </div>
+
+                            <div class="project-flow-step">
+                                <strong>03</strong>
+                                <span>System Status and Safety Feedback</span>
+                            </div>
+
                         </div>
 
-                        <div class="project-flow-arrow" aria-hidden="true">
+                        <div class="project-flow-arrow architecture-arrow" aria-hidden="true">
                             &rarr;
                         </div>
 
-                        <div class="project-flow-step">
-                            <strong>2</strong>
-                            <span>Power Management</span>
+                        <div class="architecture-column architecture-controller">
+
+                            <h4>Embedded Control</h4>
+
+                            <div class="project-flow-step">
+                                <strong>04</strong>
+                                <span>Custom PCB and Embedded Controller</span>
+                            </div>
+
+                            <div class="project-flow-step">
+                                <strong>05</strong>
+                                <span>Control Logic and Safety Decisions</span>
+                            </div>
+
                         </div>
 
-                        <div class="project-flow-arrow" aria-hidden="true">
+                        <div class="project-flow-arrow architecture-arrow" aria-hidden="true">
                             &rarr;
                         </div>
 
-                        <div class="project-flow-step">
-                            <strong>3</strong>
-                            <span>Embedded Controller</span>
+                        <div class="architecture-column">
+
+                            <h4>Outputs</h4>
+
+                            <div class="project-flow-step">
+                                <strong>06</strong>
+                                <span>Motor Drivers</span>
+                            </div>
+
+                            <div class="project-flow-step">
+                                <strong>07</strong>
+                                <span>Drive and Cleaning Motors</span>
+                            </div>
+
+                            <div class="project-flow-step">
+                                <strong>08</strong>
+                                <span>Robot Motion and Cleaning</span>
+                            </div>
+
                         </div>
 
-                        <div class="project-flow-arrow" aria-hidden="true">
-                            &rarr;
-                        </div>
+                    </div>
 
-                        <div class="project-flow-step">
-                            <strong>4</strong>
-                            <span>Sensor and Remote Inputs</span>
-                        </div>
-
-                        <div class="project-flow-arrow" aria-hidden="true">
-                            &rarr;
-                        </div>
-
-                        <div class="project-flow-step">
-                            <strong>5</strong>
-                            <span>Motor Interfaces</span>
-                        </div>
-
-                        <div class="project-flow-arrow" aria-hidden="true">
-                            &rarr;
-                        </div>
+                    <div class="architecture-power">
 
                         <div class="project-flow-step">
-                            <strong>6</strong>
-                            <span>Robot Operation</span>
+                            <strong>Power</strong>
+                            <span>
+                                External Power Input, Voltage Regulation, Power Distribution,
+                                and Short-Term Battery Backup
+                            </span>
                         </div>
 
                     </div>
@@ -438,7 +465,7 @@
                         <h4>Prototype Development</h4>
 
                         <p>
-                            The development process included assembly, board bring up,
+                            The development process included assembly, board bring-up,
                             firmware testing, motor and sensor integration, functional
                             validation, troubleshooting, and iterative design improvements.
                         </p>
