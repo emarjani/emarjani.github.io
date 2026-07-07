@@ -857,3 +857,12 @@ header.major p a:hover {
     }
 
 }
+
+.project-card-actions {
+    margin-top: 1.25em;
+    margin-bottom: 0;
+}
+
+.project-card-actions .button {
+    margin-bottom: 0;
+}
