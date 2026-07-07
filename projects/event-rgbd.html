@@ -1,0 +1,854 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>
+        Event Based RGB D Perception | Seyed Ehsan Marjani Bajestani
+    </title>
+
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1">
+
+    <meta
+        name="description"
+        content="Event based RGB D perception system combining a monochrome event camera, active structured light, hardware synchronization, ROS, Qt, and C++ for real time pixel level color and depth sensing.">
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+</head>
+
+<body class="is-preload project-page">
+
+    <!-- Header -->
+    <section id="header">
+
+        <header>
+
+            <span class="image avatar">
+                <img
+                    src="../images/profile.webp"
+                    alt="Seyed Ehsan Marjani Bajestani">
+            </span>
+
+            <h1 id="logo">
+                <a href="../index.html">
+                    Seyed Ehsan
+                    <span class="sidebar-name-break"><br></span>
+                    <span class="mobile-name-space"> </span>
+                    Marjani&nbsp;Bajestani,&nbsp;Ph.D.
+                </a>
+            </h1>
+
+            <p>
+                Robotics Systems Engineer<br>
+                Embedded Systems &amp; Intelligent Perception
+            </p>
+
+        </header>
+
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        Portfolio Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#overview" class="active">
+                        Project Overview
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contributions">
+                        My Contributions
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#architecture">
+                        System Architecture
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#results">
+                        Results
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#resources">
+                        Project Resources
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#gallery">
+                        Gallery
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <footer>
+            <ul class="icons">
+
+                <li>
+                    <a
+                        href="https://github.com/emarjani"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="icon brands fa-github">
+
+                        <span class="label">GitHub</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="https://www.linkedin.com/in/seyed-ehsan-marjani-bajestani/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="icon brands fa-linkedin">
+
+                        <span class="label">LinkedIn</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="https://scholar.google.ca/citations?user=4OsTRVIAAAAJ&amp;hl=en"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="icon solid fa-graduation-cap">
+
+                        <span class="label">Google Scholar</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="mailto:ehsan.marjani@gmail.com"
+                        class="icon solid fa-envelope">
+
+                        <span class="label">Email</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="../pdf/CV.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="icon solid fa-file-pdf">
+
+                        <span class="label">CV</span>
+                    </a>
+                </li>
+
+            </ul>
+        </footer>
+
+    </section>
+
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Overview -->
+            <section id="overview">
+
+                <div class="image main project-hero project-overview-graphic">
+					<img
+						src="../images/event-rgbd/ergbd_banner.webp"
+						alt="Overview of the event based RGB D sensing system, structured light patterns, color reconstruction, and depth sensing"
+						width="2558"
+						height="1439"
+						fetchpriority="high">
+				</div>
+
+                <div class="container">
+
+                    <ul class="actions project-back-action">
+                        <li>
+                            <a
+                                href="../index.html#three"
+                                class="button">
+
+                                &larr; Back to Featured Projects
+                            </a>
+                        </li>
+                    </ul>
+
+                    <header class="major">
+
+                        <h2>
+                            Event Based RGB D Perception
+                        </h2>
+
+                        <p>
+                            Real time pixel level color and depth sensing using
+                            an event camera and active structured light.
+                        </p>
+
+                    </header>
+
+                    <p class="project-introduction">
+						This project explored how controlled illumination could extend the
+						capabilities of a monochrome event camera beyond conventional motion
+						sensing. A TI LightCrafter 4500 projector was synchronized with the
+						camera to introduce precisely timed color and structured light patterns
+						into the scene.
+					</p>
+
+					<p>
+						The resulting event stream was processed to recover pixel level color
+						and depth information from both stationary and moving objects. The
+						completed platform combined sensor configuration, hardware triggering,
+						calibration, data acquisition, and three dimensional reconstruction
+						within a unified real time perception system.
+					</p>
+
+                    <div class="project-meta-grid">
+
+                        <div class="project-meta-item">
+                            <strong>Role</strong>
+                            <span>
+                                Prototype Designer and Researcher
+                            </span>
+                        </div>
+
+                        <div class="project-meta-item">
+                            <strong>Period</strong>
+                            <span>
+                                2019 to 2024
+                            </span>
+                        </div>
+
+                        <div class="project-meta-item">
+                            <strong>Organization</strong>
+                            <span>
+                                MIST Lab, Polytechnique Montréal
+                            </span>
+                        </div>
+
+                        <div class="project-meta-item">
+                            <strong>Focus</strong>
+                            <span>
+                                Event Vision and 3D Perception
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="technology-tags">
+                        <span>Event Camera</span>
+                        <span>Structured Light</span>
+                        <span>RGB D Sensing</span>
+                        <span>3D Perception</span>
+                        <span>Hardware Synchronization</span>
+                        <span>ROS</span>
+                        <span>Qt</span>
+                        <span>C++</span>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Contributions -->
+            <section id="contributions">
+
+                <div class="container">
+
+                    <h3>My Contributions</h3>
+
+                    <p>
+                        My work covered the design and integration of the complete
+                        experimental system, from hardware communication and
+                        synchronization to software tools, calibration, and
+                        perception processing.
+                    </p>
+
+                    <ul class="project-contribution-list">
+
+                        <li>
+                            Designed and integrated the event camera and projector
+                            sensing architecture.
+                        </li>
+
+                        <li>
+                            Developed C++ software for camera configuration, bias
+                            control, and event acquisition through the camera API.
+                        </li>
+
+                        <li>
+                            Integrated USB event streaming and hardware trigger
+                            synchronization between the event camera and projector.
+                        </li>
+
+                        <li>
+                            Controlled projection sequences for color and structured
+                            light acquisition.
+                        </li>
+
+                        <li>
+                            Developed ROS compatible tools for event publication,
+                            system configuration, and data processing.
+                        </li>
+
+                        <li>
+                            Developed a Qt graphical interface for camera setup,
+                            calibration, parameter adjustment, and visualization.
+                        </li>
+
+                        <li>
+                            Implemented color reconstruction, depth estimation,
+                            calibration, and point cloud generation.
+                        </li>
+
+                        <li>
+                            Designed and conducted experiments for performance
+                            evaluation and validation.
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+            <!-- Architecture -->
+            <section id="architecture">
+
+                <div class="container">
+
+                    <h3>System Architecture</h3>
+
+                    <p>
+                        The system combined controlled illumination, asynchronous
+                        visual sensing, hardware synchronization, and real time
+                        processing within a unified perception pipeline.
+                    </p>
+
+                    <div class="project-flow">
+
+                        <div class="project-flow-step">
+                            <strong>1</strong>
+                            <span>Structured Light Projection</span>
+                        </div>
+
+                        <div class="project-flow-arrow" aria-hidden="true">
+                            &rarr;
+                        </div>
+
+                        <div class="project-flow-step">
+                            <strong>2</strong>
+                            <span>Event Camera Acquisition</span>
+                        </div>
+
+                        <div class="project-flow-arrow" aria-hidden="true">
+                            &rarr;
+                        </div>
+
+                        <div class="project-flow-step">
+                            <strong>3</strong>
+                            <span>Hardware Trigger Synchronization</span>
+                        </div>
+
+                        <div class="project-flow-arrow" aria-hidden="true">
+                            &rarr;
+                        </div>
+
+                        <div class="project-flow-step">
+                            <strong>4</strong>
+                            <span>C++ and ROS Processing</span>
+                        </div>
+
+                        <div class="project-flow-arrow" aria-hidden="true">
+                            &rarr;
+                        </div>
+
+                        <div class="project-flow-step">
+                            <strong>5</strong>
+                            <span>Color and Depth Reconstruction</span>
+                        </div>
+
+                        <div class="project-flow-arrow" aria-hidden="true">
+                            &rarr;
+                        </div>
+
+                        <div class="project-flow-step">
+                            <strong>6</strong>
+                            <span>RGB D Point Cloud Output</span>
+                        </div>
+
+                    </div>
+
+                    <div class="project-panel">
+
+                        <h4>Hardware Integration</h4>
+
+                        <p>
+                            The monochrome event camera and TI LightCrafter 4500
+                            projector were connected through hardware triggers.
+                            The camera provided timing information used to coordinate
+                            projection sequences, while event data was transferred
+                            to the processing computer through USB.
+                        </p>
+
+                    </div>
+
+                    <div class="project-panel">
+
+                        <h4>Software Integration</h4>
+
+                        <p>
+                            C++ software managed camera parameters, event acquisition,
+                            synchronization, and projector operation. ROS provided the
+                            communication framework, while Qt tools supported system
+                            setup, calibration, visualization, and experimental control.
+                        </p>
+
+                    </div>
+
+                    <div class="project-panel">
+
+                        <h4>Perception Pipeline</h4>
+
+                        <p>
+                            Rapidly changing projection patterns generated controlled
+                            brightness events. These events were processed to recover
+                            color information, estimate depth, and reconstruct colorful
+                            three dimensional point clouds.
+                        </p>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Results -->
+            <section id="results">
+
+                <div class="container">
+
+                    <h3>Results</h3>
+
+                    <p>
+                        The completed system demonstrated high speed color and
+                        depth sensing while retaining the temporal advantages of
+                        event based vision.
+                    </p>
+
+                    <div class="project-results-grid">
+
+                        <div class="project-result">
+
+                            <strong>1400 fps</strong>
+
+                            <span>
+                                Equivalent color sensing speed
+                            </span>
+
+                        </div>
+
+                        <div class="project-result">
+
+                            <strong>4 kHz</strong>
+
+                            <span>
+                                Pixel depth detection rate
+                            </span>
+
+                        </div>
+
+                        <div class="project-result">
+
+                            <strong>Static and Moving Scenes</strong>
+
+                            <span>
+                                Color and depth measurements for a broad range
+                                of scene motion
+                            </span>
+
+                        </div>
+
+                        <div class="project-result">
+
+                            <strong>Pixel Level Reconstruction</strong>
+
+                            <span>
+                                Independent color and depth measurements using
+                                controlled projection patterns
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Resources -->
+            <section id="resources">
+
+                <div class="container">
+
+                    <h3>Publications, Code, and Research Communication</h3>
+
+                    <div class="project-resource">
+
+                        <h4>
+                            Event Based RGB Sensing with Structured Light
+                        </h4>
+
+                        <p>
+                            IEEE/CVF Winter Conference on Applications of
+                            Computer Vision, 2023
+                        </p>
+
+                        <ul class="actions">
+                            <li>
+                                <a
+                                    href="https://doi.org/10.1109/WACV56688.2023.00542"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="button">
+
+                                    View Publication
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="project-resource">
+
+                        <h4>
+                            Ma thèse en 180 secondes, 2024
+                        </h4>
+
+                        <p>
+                            Polytechnique Montréal research communication profile presenting
+                            Event Based RGB D Perception With Structured Light for a general
+                            audience.
+                        </p>
+
+                        <ul class="actions">
+                            <li>
+                                <a
+                                    href="https://etudiant.polymtl.ca/etudes/programmes/particularites-des-etudes-superieures/ma-these-en-180-secondes/edition-2024/24-37"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="button">
+
+                                    View MT180 Profile
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="project-resource">
+
+                        <h4>
+                            Event Based RGB D ROS Repository
+                        </h4>
+
+                        <p>
+                            Public source code and ROS tools developed for the
+                            event camera and structured light perception system.
+                        </p>
+
+                        <ul class="actions">
+                            <li>
+                                <a
+                                    href="https://github.com/MISTLab/event_based_rgbd_ros"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="button">
+
+                                    View GitHub Repository
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="project-resource">
+
+                        <h4>
+                            Event Based Vision for Robot Soccer
+                        </h4>
+
+                        <p>
+                            Related work applying event cameras to fast object
+                            tracking, data collection, camera configuration, and
+                            ROS based visualization for robotic soccer.
+                        </p>
+
+                        <ul class="actions">
+
+                            <li>
+                                <a
+                                    href="https://doi.org/10.1007/978-3-031-85859-8_26"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="button">
+
+                                    View Publication
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="https://github.com/MISTLab/event_based_data"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="button">
+
+                                    View Dataset Repository
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Gallery -->
+            <section id="gallery">
+
+                <div class="container">
+
+                    <h3>Project Gallery</h3>
+
+                    <p>
+                        Selected images from the sensing platform, software tools,
+                        calibration process, and reconstructed outputs.
+                    </p>
+
+                    <div class="project-gallery">
+
+                        <figure>
+                            <img
+                                src="../images/event-rgbd/system-setup.webp"
+                                alt="Event camera and TI LightCrafter 4500 experimental setup">
+
+                            <figcaption>
+                                Event camera and structured light projector setup.
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img
+                                src="../images/event-rgbd/calibration-interface.webp"
+                                alt="ROS and Qt calibration interface">
+
+                            <figcaption>
+                                ROS and Qt interface for system configuration
+                                and calibration.
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+							<video
+								autoplay
+								loop
+								muted
+								playsinline
+								preload="metadata"
+								poster="../images/event-rgbd/color-reconstruction-poster.webp"
+								aria-label="Event based color reconstruction comparison">
+
+								<source
+									src="../images/event-rgbd/color-reconstruction.mp4"
+									type="video/mp4">
+
+								Your browser does not support embedded video.
+							</video>
+
+							<figcaption>
+								Real time color reconstruction using projected RGB patterns.
+								The event camera output is shown on the left, the reconstructed
+								color result on the right, and a conventional frame based video
+								at the bottom for visual reference.
+							</figcaption>
+						</figure>
+
+						<figure>
+							<video
+								autoplay
+								loop
+								muted
+								playsinline
+								preload="metadata"
+								poster="../images/event-rgbd/pinwheel.webp"
+								aria-label="Event based color reconstruction">
+
+								<source
+									src="../images/event-rgbd/pinwheel.mp4"
+									type="video/mp4">
+
+								Your browser does not support embedded video.
+							</video>
+
+							<figcaption>
+								Color reconstruction of a rotating pinwheel at different motion speeds.
+								The sequence first shows the raw event camera output, followed by the
+								reconstructed color results as the rotation speed changes.
+							</figcaption>
+						</figure>
+
+						<figure>
+							<video
+								autoplay
+								loop
+								muted
+								playsinline
+								preload="metadata"
+								poster="../images/event-rgbd/balls_color-depth.webp"
+								aria-label="Event based color and depth reconstruction">
+
+								<source
+									src="../images/event-rgbd/balls_color-depth.mp4"
+									type="video/mp4">
+
+								Your browser does not support embedded video.
+							</video>
+
+							<figcaption>
+								Color and depth reconstruction of two balls moving vertically through
+								the scene. A volleyball is shown on the left and a smaller blue ball on
+								the right, demonstrating simultaneous RGB and depth recovery for objects
+								with different sizes, colors, and motion.
+							</figcaption>
+						</figure>
+
+						<figure>
+							<video
+								autoplay
+								loop
+								muted
+								playsinline
+								preload="metadata"
+								poster="../images/event-rgbd/robocup_event-color.webp"
+								aria-label="Event based color reconstruction">
+
+								<source
+									src="../images/event-rgbd/robocup_event-color.mp4"
+									type="video/mp4">
+
+								Your browser does not support embedded video.
+							</video>
+
+							<figcaption>
+								Example from an event vision dataset that I recorded during a RoboCup
+								competition, shown at five times slower than the original speed. The event
+								camera output appears on the left, while the camera's native color frame
+								output appears on the right. During fast motion, the frame based recording
+								shows visible blur and delay, while the event stream preserves substantially
+								finer temporal detail. The color image was recorded directly by the camera
+								and was not reconstructed by the RGB D system.
+							</figcaption>
+						</figure>
+
+
+                    </div>
+
+                    <ul class="actions project-bottom-actions">
+
+                        <li>
+                            <a
+                                href="../index.html#three"
+                                class="button">
+
+                                Back to Featured Projects
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="index.html"
+                                class="button">
+
+                                View All Projects
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+        </div>
+
+
+        <!-- Footer -->
+        <section id="footer">
+
+            <div class="container">
+
+                <ul class="copyright">
+
+                    <li>
+                        &copy; Seyed Ehsan Marjani Bajestani. All rights reserved.
+                    </li>
+
+                    <li>
+                        Robotics and Embedded Systems Portfolio
+                    </li>
+
+                    <li class="template-credit">
+                        Design adapted from
+                        <a
+                            href="https://html5up.net/read-only"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Read Only by HTML5 UP
+                        </a>,
+                        licensed under
+                        <a
+                            href="https://creativecommons.org/licenses/by/3.0/"
+                            target="_blank"
+                            rel="license noopener noreferrer">
+                            CC BY 3.0
+                        </a>.
+                        Modified for this portfolio.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/custom.js"></script>
+
+</body>
+</html>
