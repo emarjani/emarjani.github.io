@@ -866,3 +866,13 @@ header.major p a:hover {
 .project-card-actions .button {
     margin-bottom: 0;
 }
+
+.project-resource .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75em;
+}
+
+.project-resource .actions li {
+    padding: 0;
+}
