@@ -11,12 +11,8 @@
         content="width=device-width, initial-scale=1">
 
     <meta
-        name="description"
-        content="Portiloop v2. This engineering project page is currently being prepared.">
-
-    <meta
-        name="robots"
-        content="noindex, follow">
+    name="description"
+    content="Portiloop v2 open-source EEG hardware project featuring custom PCB design, embedded integration, ADS1299 EEG acquisition, Coral Dev Board Mini integration, Altium Designer, and KiCad.">
 
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/custom.css">
@@ -37,10 +33,10 @@
 
             <h1 id="logo">
                 <a href="../index.html">
-                    Seyed Ehsan
+                    Seyed&nbsp;Ehsan
                     <span class="sidebar-name-break"><br></span>
                     <span class="mobile-name-space"> </span>
-                    Marjani&nbsp;Bajestani,&nbsp;Ph.D.
+                    Marjani&nbsp;Bajestani, Ph.D.
                 </a>
             </h1>
 
@@ -61,14 +57,38 @@
                 </li>
 
                 <li>
-                    <a href="../index.html#three">
-                        Featured Projects
+                    <a href="#overview" class="active">
+                        Project Overview
                     </a>
                 </li>
 
                 <li>
-                    <a href="#status" class="active">
-                        Page Status
+                    <a href="#contributions">
+                        My Contributions
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#architecture">
+                        System Architecture
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#development">
+                        Hardware Development
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#resources">
+                        Project Resources
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#gallery">
+                        Gallery
                     </a>
                 </li>
 
@@ -143,62 +163,431 @@
         <!-- Main -->
         <div id="main">
 
-            <section
-                id="status"
-                class="project-placeholder-section">
+            <!-- Overview -->
+            <section id="overview">
+
+                <div class="image main project-hero project-overview-graphic">
+                    <img
+                        src="../images/portiloop/PortiloopV2Altium_PCB-04.webp"
+                        alt="Portiloop v2 EEG acquisition and closed-loop stimulation hardware"
+                        fetchpriority="high">
+                </div>
 
                 <div class="container">
 
-                    <div class="project-placeholder-card">
+                    <ul class="actions project-back-action">
+                        <li>
+                            <a
+                                href="../index.html#three"
+                                class="button">
 
-                        <span class="project-status-label">
-                            Project Page in Progress
-                        </span>
+                                &larr; Back to Featured Projects
+                            </a>
+                        </li>
+                    </ul>
 
-                        <h2>Portiloop v2</h2>
+                    <header class="major">
 
-                        <p class="project-placeholder-introduction">
-                            A detailed case study covering PCB design for versions 2.2 and 2.3, EEG hardware integration, open source development, Altium Designer, and KiCad will be added soon.
-                        </p>
+                        <h2>
+                            Portiloop v2
+                        </h2>
 
                         <p>
-                            The complete case study is currently being prepared
-                            and will include my engineering contributions, system
-                            architecture, technical results, and selected project
-                            images and videos.
+                            Open-source EEG hardware for closed-loop brain stimulation.
                         </p>
 
-                        <ul class="actions project-placeholder-actions">
+                    </header>
 
+                    <p class="project-introduction">
+                        Portiloop is an open-source, portable platform developed for
+                        electroencephalography acquisition, real-time neural-event
+                        detection, and closed-loop stimulation experiments.
+                    </p>
+
+                    <p>
+                        My primary contribution focused on the electronic hardware and
+                        PCB development of Portiloop v2. I designed versions 2.1 and 2.2 using
+                        Altium Designer and developed version 2.3 using KiCad, supporting
+                        continued hardware refinement, embedded integration, and openly
+                        reproducible development.
+                    </p>
+
+                    <div class="project-meta-grid">
+
+                        <div class="project-meta-item">
+                            <strong>Role</strong>
+                            <span>
+                                PCB Designer and Hardware Developer
+                            </span>
+                        </div>
+
+                        <div class="project-meta-item">
+                            <strong>Period</strong>
+                            <span>
+                                2023 to 2026
+                            </span>
+                        </div>
+
+                        <div class="project-meta-item">
+                            <strong>Organization</strong>
+                            <span>
+                                MIST Lab, Polytechnique Montréal
+                            </span>
+                        </div>
+
+                        <div class="project-meta-item">
+                            <strong>Focus</strong>
+                            <span>
+                                EEG Hardware and PCB Design
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="technology-tags">
+                        <span>EEG Hardware</span>
+                        <span>Closed-Loop Stimulation</span>
+                        <span>Custom PCB Design</span>
+                        <span>ADS1299</span>
+                        <span>Coral Dev Board Mini</span>
+                        <span>Altium Designer</span>
+                        <span>KiCad</span>
+                        <span>Embedded Integration</span>
+                        <span>Open-Source Hardware</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Contributions -->
+            <section id="contributions">
+
+                <div class="container">
+
+                    <h3>My Contributions</h3>
+
+                    <p>
+                        My work centered on PCB design, component integration,
+                        electrical interfaces, manufacturability, and preparation
+                        of the hardware for experimental use.
+                    </p>
+
+                    <ul class="project-contribution-list">
+
+                        <li>
+                            Designed the Portiloop v2.1 and v2.2 printed circuit boards
+                            using Altium Designer.
+                        </li>
+
+                        <li>
+                            Translated system requirements into schematics,
+                            component placement, routing, connectors, and
+                            fabrication-ready design files.
+                        </li>
+
+                        <li>
+                            Developed the Portiloop v2.3 board using KiCad.
+                        </li>
+
+                        <li>
+                            Integrated EEG acquisition, embedded processing,
+                            power, communication, and external hardware interfaces.
+                        </li>
+
+                        <li>
+                            Considered board dimensions, connector placement,
+                            manufacturability, and integration with the processing board.
+                        </li>
+
+                        <li>
+                            Prepared and maintained open-source hardware resources
+                            for fabrication, review, and future modification.
+                        </li>
+
+                        <li>
+                            Supported prototype assembly, inspection, integration,
+                            and iterative hardware testing.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+
+            <!-- Architecture -->
+            <section id="architecture">
+
+                <div class="container">
+
+                    <h3>System Architecture</h3>
+
+                    <p>
+                        The platform combines EEG signal acquisition, embedded processing,
+                        neural-event detection, experimental control, and stimulation
+                        within a portable closed-loop system.
+                    </p>
+
+                    <div class="project-flow">
+
+                        <div class="project-flow-step">
+                            <strong>1</strong>
+                            <span>EEG Electrodes and Analog Signals</span>
+                        </div>
+
+                        <div class="project-flow-arrow" aria-hidden="true">
+                            &rarr;
+                        </div>
+
+                        <div class="project-flow-step">
+                            <strong>2</strong>
+                            <span>ADS1299 EEG Acquisition</span>
+                        </div>
+
+                        <div class="project-flow-arrow" aria-hidden="true">
+                            &rarr;
+                        </div>
+
+                        <div class="project-flow-step">
+                            <strong>3</strong>
+                            <span>Custom Portiloop PCB</span>
+                        </div>
+
+                        <div class="project-flow-arrow" aria-hidden="true">
+                            &rarr;
+                        </div>
+
+                        <div class="project-flow-step">
+                            <strong>4</strong>
+                            <span>Coral Dev Board Mini</span>
+                        </div>
+
+                        <div class="project-flow-arrow" aria-hidden="true">
+                            &rarr;
+                        </div>
+
+                        <div class="project-flow-step">
+                            <strong>5</strong>
+                            <span>Real-Time Detection</span>
+                        </div>
+
+                        <div class="project-flow-arrow" aria-hidden="true">
+                            &rarr;
+                        </div>
+
+                        <div class="project-flow-step">
+                            <strong>6</strong>
+                            <span>Closed-Loop Stimulation</span>
+                        </div>
+
+                    </div>
+
+                    <div class="project-panel">
+
+                        <h4>EEG Acquisition</h4>
+
+                        <p>
+                            The ADS1299 analog front end digitizes low-amplitude EEG
+                            signals and provides the acquisition interface required for
+                            downstream processing.
+                        </p>
+
+                    </div>
+
+                    <div class="project-panel">
+
+                        <h4>Embedded Processing</h4>
+
+                        <p>
+                            The Coral Dev Board Mini provides onboard computation for
+                            signal processing, neural-event detection, system control,
+                            data recording, and user interaction.
+                        </p>
+
+                    </div>
+
+                    <div class="project-panel">
+
+                        <h4>Closed-Loop Operation</h4>
+
+                        <p>
+                            Detected EEG events can be used to trigger stimulation with
+                            controlled timing, enabling experiments that respond to
+                            brain activity in real time.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Hardware Development -->
+            <section id="development">
+
+                <div class="container">
+
+                    <h3>Hardware Development</h3>
+
+                    <div class="project-panel">
+
+                        <h4>Schematic Design</h4>
+
+                        <p>
+                            Defined the electrical connections among EEG acquisition,
+                            embedded processing, power, communication, stimulation, and
+                            external interface components.
+                        </p>
+
+                    </div>
+
+                    <div class="project-panel">
+
+                        <h4>PCB Layout</h4>
+
+                        <p>
+                            Performed component placement and multilayer routing while
+                            considering signal integrity, board dimensions, connectors,
+                            manufacturability, and integration with the processing board.
+                        </p>
+
+                    </div>
+
+                    <div class="project-panel">
+
+                        <h4>Design Migration</h4>
+
+                        <p>
+                            Transitioned the hardware-development workflow from Altium
+                            Designer for versions 2.1 and 2.2 to KiCad for version 2.3, supporting
+                            greater accessibility within the open-source project.
+                        </p>
+
+                    </div>
+
+                    <div class="project-panel">
+
+                        <h4>Prototype and Fabrication Support</h4>
+
+                        <p>
+                            Prepared the PCB design resources needed for fabrication,
+                            assembly, inspection, integration, and iterative hardware
+                            testing.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Resources -->
+            <section id="resources">
+
+                <div class="container">
+
+                    <h3>Publication and Open-Source Resources</h3>
+
+                    <div class="project-resource">
+
+                        <h4>
+                            Personalizing Brain Stimulation: Continual Learning for
+                            Sleep Spindle Detection
+                        </h4>
+
+                        <p>
+                            Journal of Neural Engineering
+                        </p>
+
+                        <ul class="actions">
                             <li>
                                 <a
-                                    href="../index.html#three"
-                                    class="button primary">
-
-                                    Back to Featured Projects
-                                </a>
-                            </li>
-
-                            <li>
-                                <a
-                                    href="../index.html"
-                                    class="button">
-
-                                    Portfolio Home
-                                </a>
-                            </li>
-
-                            <li>
-                                <a
-                                    href="../pdf/CV.pdf"
+                                    href="https://doi.org/10.1088/1741-2552/adebb1"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     class="button">
 
-                                    View CV
+                                    View Publication
                                 </a>
                             </li>
+                        </ul>
 
+                    </div>
+
+                    <div class="project-resource">
+
+                        <h4>Portiloop Hardware</h4>
+
+                        <p>
+                            PCB schematics, board layouts, fabrication resources,
+                            component models, and hardware documentation.
+                        </p>
+
+                        <ul class="actions">
+                            <li>
+                                <a
+                                    href="https://github.com/Portiloop/portiloop-hardware"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="button">
+
+                                    Hardware Repository
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="project-resource">
+
+                        <h4>Portiloop Software</h4>
+
+                        <p>
+                            Device software and graphical interfaces for controlling
+                            acquisition, real-time detection, stimulation, and EEG
+                            recording.
+                        </p>
+
+                        <ul class="actions">
+                            <li>
+                                <a
+                                    href="https://github.com/Portiloop/portiloop-software"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="button">
+
+                                    Software Repository
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="project-resource">
+
+                        <h4>Portiloop Training</h4>
+
+                        <p>
+                            Machine-learning resources associated with training the
+                            sleep-spindle detector used by the closed-loop system.
+                        </p>
+
+                        <ul class="actions">
+                            <li>
+                                <a
+                                    href="https://github.com/Portiloop/portiloop-training"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="button">
+
+                                    Training Repository
+                                </a>
+                            </li>
                         </ul>
 
                     </div>
@@ -207,8 +596,112 @@
 
             </section>
 
-        </div>
 
+            <!-- Gallery -->
+            <section id="gallery">
+
+                <div class="container">
+
+                    <h3>Project Gallery</h3>
+
+                    <p>
+                        Selected hardware views, PCB revisions, system integration,
+                        and operating demonstrations of the Portiloop platform.
+                    </p>
+
+                    <div class="project-gallery">
+
+                        <figure>
+                            <img
+                                src="../images/portiloop/portiloop.webp"
+                                alt="Assembled Portiloop portable EEG system"
+                                loading="lazy">
+
+                            <figcaption>
+                                Portiloop v2.1 assembled hardware, combining the custom EEG acquisition
+                                PCB with the embedded processing platform for portable closed-loop
+                                stimulation experiments.
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img
+                                src="../images/portiloop/Coral_mini.webp"
+                                alt="Google Coral Dev Board Mini"
+                                loading="lazy">
+
+                            <figcaption>
+                                Google Coral Dev Board Mini used as the embedded processing platform for
+                                onboard signal processing, neural-event detection, system control, and
+                                user interaction.
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img
+                                src="../images/portiloop/v2.3_PCB.webp"
+                                alt="Top view of the Portiloop custom PCB"
+                                loading="lazy">
+
+                            <figcaption>
+                                Top view of the Portiloop v2.3 PCB design in KiCad, showing the custom board layout,
+                                component placement, routing, and electrical interfaces.
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <video
+                                autoplay
+                                loop
+                                muted
+                                playsinline
+                                preload="metadata"
+                                poster="../images/portiloop/v2.3_3D.webp"
+                                aria-label="Portiloop hardware demonstration">
+
+                                <source
+                                    src="../images/portiloop/v2.3_3D.mp4"
+                                    type="video/mp4">
+
+                                Your browser does not support embedded video.
+                            </video>
+
+                            <figcaption>
+                                Three-dimensional KiCad visualization of the Portiloop v2.3 PCB, used to
+                                inspect board geometry, component placement, connector clearance, and
+                                mechanical integration before fabrication.
+                            </figcaption>
+                        </figure>
+
+                    </div>
+
+                    <ul class="actions project-bottom-actions">
+
+                        <li>
+                            <a
+                                href="../index.html#three"
+                                class="button">
+
+                                Back to Featured Projects
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="index.html"
+                                class="button">
+
+                                View All Projects
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+        </div>
 
         <!-- Footer -->
         <section id="footer">
