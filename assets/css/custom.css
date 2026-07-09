@@ -876,3 +876,51 @@ header.major p a:hover {
 .project-resource .actions li {
     padding: 0;
 }
+
+.project-gallery figure.portrait-gallery-image img {
+    object-fit: contain;
+    background: var(--surface);
+}
+
+/* Wider content area while keeping readable side spacing */
+#main > section > .container,
+#footer > .container {
+    width: min(86%, calc(100% - 3em));
+    max-width: 82em;
+    box-sizing: border-box;
+}
+
+/* Tablet / medium-window spacing */
+@media screen and (max-width: 1280px) {
+
+    #main > section > .container,
+    #footer > .container {
+        width: calc(100% - 5em) !important;
+        max-width: 82em;
+    }
+
+}
+
+/* Normal mobile spacing */
+@media screen and (max-width: 736px) {
+
+    #main > section > .container,
+    #footer > .container {
+        width: 100% !important;
+        max-width: none !important;
+        padding-left: 2.5em !important;
+        padding-right: 2.5em !important;
+    }
+
+}
+
+/* Extra spacing for very narrow screens */
+@media screen and (max-width: 420px) {
+
+    #main > section > .container,
+    #footer > .container {
+        padding-left: 1.5em !important;
+        padding-right: 1.5em !important;
+    }
+
+}
