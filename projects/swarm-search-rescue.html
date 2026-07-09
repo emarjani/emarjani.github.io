@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-    <title>Search and Rescue with Sparsely Connected Swarms | Seyed Ehsan Marjani Bajestani</title>
+    <title>
+        Search and Rescue with Sparsely Connected Swarms | Seyed Ehsan Marjani Bajestani
+    </title>
 
     <meta charset="utf-8">
 
@@ -12,11 +14,7 @@
 
     <meta
         name="description"
-        content="Search and Rescue with Sparsely Connected Swarms. This engineering project page is currently being prepared.">
-
-    <meta
-        name="robots"
-        content="noindex, follow">
+        content="Search and rescue with sparsely connected robot swarms using decentralized coordination, distributed belief maps, ROSBuzz, Buzz, ARGoS simulation, and DJI drone experiments.">
 
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/custom.css">
@@ -37,10 +35,10 @@
 
             <h1 id="logo">
                 <a href="../index.html">
-                    Seyed Ehsan
+                    Seyed&nbsp;Ehsan
                     <span class="sidebar-name-break"><br></span>
                     <span class="mobile-name-space"> </span>
-                    Marjani&nbsp;Bajestani,&nbsp;Ph.D.
+                    Marjani&nbsp;Bajestani, Ph.D.
                 </a>
             </h1>
 
@@ -61,14 +59,38 @@
                 </li>
 
                 <li>
-                    <a href="../index.html#three">
-                        Featured Projects
+                    <a href="#overview" class="active">
+                        Project Overview
                     </a>
                 </li>
 
                 <li>
-                    <a href="#status" class="active">
-                        Page Status
+                    <a href="#contributions">
+                        My Contributions
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#architecture">
+                        System Architecture
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#validation">
+                        Validation
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#resources">
+                        Project Resources
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#gallery">
+                        Gallery
                     </a>
                 </li>
 
@@ -143,65 +165,568 @@
         <!-- Main -->
         <div id="main">
 
-            <section
-                id="status"
-                class="project-placeholder-section">
+            <!-- Overview -->
+            <section id="overview">
+
+                <div class="image main project-hero project-overview-graphic">
+                    <img
+                        src="../images/swarm-search-rescue/swarm_search_rescue.webp"
+                        alt="Search and rescue with sparsely connected autonomous drone swarms"
+                        fetchpriority="high">
+                </div>
 
                 <div class="container">
 
-                    <div class="project-placeholder-card">
+                    <ul class="actions project-back-action">
+                        <li>
+                            <a
+                                href="../index.html#three"
+                                class="button">
 
-                        <span class="project-status-label">
-                            Project Page in Progress
-                        </span>
+                                &larr; Back to Featured Projects
+                            </a>
+                        </li>
+                    </ul>
 
-                        <h2>Search and Rescue with Sparsely Connected Swarms</h2>
+                    <header class="major">
 
-                        <p class="project-placeholder-introduction">
-                            A detailed case study covering decentralized coordination, distributed belief maps, sparse communication, mesh networking, simulation, and real world drone experiments will be added soon.
-                        </p>
+                        <h2>
+                            Search and Rescue with Sparsely Connected Swarms
+                        </h2>
 
                         <p>
-                            The complete case study is currently being prepared
-                            and will include my engineering contributions, system
-                            architecture, technical results, and selected project
-                            images and videos.
+                            Decentralized search, belief sharing, and communication
+                            relay formation for robot swarms with intermittent connectivity.
                         </p>
 
-                        <ul class="actions project-placeholder-actions">
+                    </header>
+
+                    <p class="project-introduction">
+                        This research project addressed search and rescue scenarios where
+                        robots must spread over large areas while maintaining only sparse
+                        and intermittent communication. The system allowed robots to
+                        coordinate exploration through a distributed belief map and to
+                        form a communication relay after detecting a target.
+                    </p>
+
+                    <p>
+                        My contribution was as an equal-contribution researcher on the
+                        algorithmic design, simulation validation, and real-world drone
+                        experimentation. The work combined swarm intelligence, decentralized
+                        decision making, robot networking, simulation, and hardware-in-the-loop
+                        testing with aerial robots.
+                    </p>
+
+                    <div class="project-meta-grid">
+
+                        <div class="project-meta-item">
+                            <strong>Role</strong>
+                            <span>
+                                Equal-Contribution Researcher
+                            </span>
+                        </div>
+
+                        <div class="project-meta-item">
+                            <strong>Period</strong>
+                            <span>
+                                2021 to 2022
+                            </span>
+                        </div>
+
+                        <div class="project-meta-item">
+                            <strong>Organization</strong>
+                            <span>
+                                MIST Lab, Polytechnique Montréal
+                            </span>
+                        </div>
+
+                        <div class="project-meta-item">
+                            <strong>Focus</strong>
+                            <span>
+                                Swarm Robotics and Decentralized Coordination
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="technology-tags">
+                        <span>Swarm Robotics</span>
+                        <span>Search and Rescue</span>
+                        <span>Decentralized Coordination</span>
+                        <span>Distributed Belief Maps</span>
+                        <span>Sparse Connectivity</span>
+                        <span>Communication Relay</span>
+                        <span>Buzz</span>
+                        <span>ROSBuzz</span>
+                        <span>ROS</span>
+                        <span>ARGoS</span>
+                        <span>Hardware-in-the-Loop</span>
+                        <span>DJI Matrice 300 RTK</span>
+                        <span>DJI Manifold 2</span>
+                        <span>B.A.T.M.A.N. Mesh Network</span>
+                        <span>Python</span>
+                        <span>C++</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Contributions -->
+            <section id="contributions">
+
+                <div class="container">
+
+                    <h3>My Contributions</h3>
+
+                    <p>
+                        My work focused on research development, simulation,
+                        experimental validation, and integration of the swarm
+                        coordination approach with real aerial robot platforms.
+                    </p>
+
+                    <ul class="project-contribution-list">
+
+                        <li>
+                            Co-developed the decentralized search and rescue approach with
+                            equal research contribution.
+                        </li>
+
+                        <li>
+                            Implemented and evaluated distributed belief-map coordination for
+                            target search under sparse and intermittent communication.
+                        </li>
+
+                        <li>
+                            Integrated swarm behaviors using Buzz and ROSBuzz within a
+                            ROS-based robotic workflow.
+                        </li>
+
+                        <li>
+                            Developed ARGoS simulation scenarios for multi-robot search,
+                            information sharing, and relay formation.
+                        </li>
+
+                        <li>
+                            Implemented hardware-in-the-loop validation using DJI Matrice 300 RTK
+                            drones and DJI Manifold 2 onboard computers.
+                        </li>
+
+                        <li>
+                            Conducted real-world flight experiments with three autonomous drones
+                            at the CEPSUM soccer field.
+                        </li>
+
+                        <li>
+                            Analyzed system behavior across simulation and outdoor experiments,
+                            including search coordination, belief sharing, communication behavior,
+                            and relay formation.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+
+            <!-- Architecture -->
+            <section id="architecture">
+
+                <div class="container">
+
+                    <h3>System Architecture</h3>
+
+                    <p>
+                        The system used a decentralized role-based swarm architecture.
+                        Each drone ran the same behavior logic and changed role depending
+                        on target discovery, rendezvous updates, relay requirements, and
+                        communication state.
+                    </p>
+
+                    <div class="project-flow">
+
+                        <div class="project-flow-step">
+                            <strong>1</strong>
+                            <span>Search and Belief Update</span>
+                        </div>
+
+                        <div class="project-flow-arrow" aria-hidden="true">
+                            &rarr;
+                        </div>
+
+                        <div class="project-flow-step">
+                            <strong>2</strong>
+                            <span>Rendezvous Check</span>
+                        </div>
+
+                        <div class="project-flow-arrow" aria-hidden="true">
+                            &rarr;
+                        </div>
+
+                        <div class="project-flow-step">
+                            <strong>3</strong>
+                            <span>Target Discovery</span>
+                        </div>
+
+                        <div class="project-flow-arrow" aria-hidden="true">
+                            &rarr;
+                        </div>
+
+                        <div class="project-flow-step">
+                            <strong>4</strong>
+                            <span>Networker Assignment</span>
+                        </div>
+
+                        <div class="project-flow-arrow" aria-hidden="true">
+                            &rarr;
+                        </div>
+
+                        <div class="project-flow-step">
+                            <strong>5</strong>
+                            <span>Relay Formation</span>
+                        </div>
+
+                    </div>
+
+                    <div class="project-panel">
+
+                        <h4>Swarm Coordination Logic</h4>
+
+                        <p>
+                            Robots searched independently using a distributed belief map
+                            and exchanged updates opportunistically when they came within
+                            communication range. Periodic rendezvous checks allowed the
+                            swarm to share target information without requiring continuous
+                            connectivity.
+                        </p>
+
+                    </div>
+
+                    <div class="project-panel">
+
+                        <h4>Relay and Communication Strategy</h4>
+
+                        <p>
+                            After a target was found, the swarm assigned robots to
+                            networker roles and formed a communication relay from the
+                            rendezvous point toward the target location, allowing target
+                            information to reach the operator.
+                        </p>
+
+                    </div>
+
+                    <div class="project-panel">
+
+                        <h4>Deployment Stack</h4>
+
+                        <p>
+                            The implementation combined Buzz, ROSBuzz, ROS, DJI OSDK,
+                            DJI Matrice 300 RTK drones, DJI Manifold 2 onboard computers,
+                            and a B.A.T.M.A.N. ad-hoc mesh network.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Validation -->
+            <section id="validation">
+
+                <div class="container">
+
+                    <h3>Validation</h3>
+
+                    <p>
+                        The work was validated through simulation, hardware-in-the-loop
+                        testing, and outdoor experiments with three DJI Matrice 300 RTK
+                        drones.
+                    </p>
+
+                    <div class="project-panel">
+
+                        <h4>Simulation Evaluation</h4>
+
+                        <p>
+                            ARGoS simulations were used to evaluate the decentralized
+                            search strategy, distributed belief-map updates, sparse
+                            communication behavior, and relay formation across different
+                            swarm configurations.
+                        </p>
+
+                    </div>
+
+                    <div class="project-panel">
+
+                        <h4>Hardware-in-the-Loop Validation</h4>
+
+                        <p>
+                            The swarm logic was validated with DJI Matrice 300 RTK drones
+                            and DJI Manifold 2 onboard computers, connecting the Buzz and
+                            ROSBuzz behavior layer to realistic aerial robot hardware and
+                            communication interfaces.
+                        </p>
+
+                    </div>
+
+                    <div class="project-panel">
+
+                        <h4>Outdoor Drone Experiments</h4>
+
+                        <p>
+                            Real-world experiments were conducted with three drones at the
+                            CEPSUM soccer field to validate the system beyond simulation
+                            and demonstrate relay formation with physical UAVs.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Resources -->
+            <section id="resources">
+
+                <div class="container">
+
+                    <h3>Publication and Code</h3>
+
+                    <div class="project-resource">
+
+                        <h4>
+                            Search and Rescue with Sparsely Connected Swarms
+                        </h4>
+
+                        <p>
+                            Autonomous Robots, 2023
+                        </p>
+
+                        <ul class="actions">
 
                             <li>
                                 <a
-                                    href="../index.html#three"
-                                    class="button primary">
-
-                                    Back to Featured Projects
-                                </a>
-                            </li>
-
-                            <li>
-                                <a
-                                    href="../index.html"
-                                    class="button">
-
-                                    Portfolio Home
-                                </a>
-                            </li>
-
-                            <li>
-                                <a
-                                    href="../pdf/CV.pdf"
+                                    href="https://doi.org/10.1007/s10514-022-10080-7"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     class="button">
 
-                                    View CV
+                                    View Publication
                                 </a>
                             </li>
 
                         </ul>
 
                     </div>
+
+                    <div class="project-resource">
+
+                        <h4>ROSBuzz</h4>
+
+                        <p>
+                            ROS package connecting the Buzz Virtual Machine with the ROS
+                            ecosystem for mobile robot and swarm robotics experiments.
+                        </p>
+
+                        <ul class="actions">
+
+                            <li>
+                                <a
+                                    href="https://github.com/MISTLab/ROSBuzz"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="button">
+
+                                    View ROSBuzz Repository
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="project-resource">
+
+                        <h4>Technical References</h4>
+
+                        <p>
+                            External tools and documentation related to the swarm programming,
+                            drone control, and ad-hoc networking components used in this project.
+                        </p>
+
+                        <ul class="actions">
+
+                            <li>
+                                <a
+                                    href="https://github.com/buzz-lang/Buzz"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="button">
+                                    Buzz Language
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="https://developer.dji.com/onboard-api-reference/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="button">
+                                    DJI Onboard SDK
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="https://www.open-mesh.org/projects/batman-adv/wiki/BATMAN_IV"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="button">
+                                    B.A.T.M.A.N. Advanced
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Gallery -->
+            <section id="gallery">
+
+                <div class="container">
+
+                    <h3>Project Gallery</h3>
+
+                    <p>
+                        Selected images and videos from simulation, hardware-in-the-loop
+                        validation, and real-world drone experiments.
+                        Additional algorithm diagrams, quantitative plots, and experimental details
+                        are available in the published article.
+                    </p>
+
+                    <div class="project-gallery">
+
+                        <figure>
+                            <img
+                                src="../images/swarm-search-rescue/simulated_detection.webp"
+                                alt="ARGoS simulation of search and rescue with sparsely connected swarms"
+                                loading="lazy">
+
+                            <figcaption>
+                                ARGoS simulation screenshot showing target detection during a moving-target
+                                search scenario. The simulation was used to evaluate swarm behavior,
+                                belief-map updates, and decentralized coordination before field deployment.
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <video
+                                autoplay
+                                loop
+                                muted
+                                playsinline
+                                preload="metadata"
+                                poster="../images/swarm-search-rescue/simulated_full.webp"
+                                aria-label="ARGoS simulation video">
+
+                                <source
+                                    src="../images/swarm-search-rescue/simulated_full.mp4"
+                                    type="video/mp4">
+
+                                Your browser does not support embedded video.
+                            </video>
+
+                            <figcaption>
+                                ARGoS simulation video showing three drones completing a full search for
+                                one static target. The static belief map contains multiple high-probability
+                                search regions, requiring the drones to coordinate exploration before
+                                converging on the target.
+                            </figcaption>
+                        </figure>
+
+                        <figure class="portrait-gallery-image">
+                            <img
+                                src="../images/swarm-search-rescue/hardware-in-the-loop.webp"
+                                alt="Hardware-in-the-loop setup"
+                                loading="lazy">
+
+                            <figcaption>
+                                Hardware-in-the-loop setup with three DJI Matrice 300 RTK drones at
+                                MIST Lab. This setup connected the swarm-control software to real drone
+                                hardware and onboard computing before outdoor flight tests.
+                            </figcaption>
+                        </figure>
+
+                        <figure class="portrait-gallery-image">
+                            <img
+                                src="../images/swarm-search-rescue/real_world.webp"
+                                alt="Real-world experiment setup"
+                                loading="lazy">
+
+                            <figcaption>
+                                Real-world experiment setup with three DJI Matrice 300 RTK drones during
+                                outdoor validation of the decentralized search and relay-formation system.
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <video
+                                autoplay
+                                loop
+                                muted
+                                playsinline
+                                preload="metadata"
+                                poster="../images/swarm-search-rescue/real_world_full.webp"
+                                aria-label="Real-world experiment video">
+
+                                <source
+                                    src="../images/swarm-search-rescue/real_world_full.mp4"
+                                    type="video/mp4">
+
+                                Your browser does not support embedded video.
+                            </video>
+
+                            <figcaption>
+                                Full outdoor test at ten times playback speed. Three drones search the
+                                soccer field with reduced communication range, detect the target, and form
+                                a relay chain from the rendezvous point to the target location by the end
+                                of the experiment.
+                            </figcaption>
+                        </figure>
+
+                    </div>
+
+                    <ul class="actions project-bottom-actions">
+
+                        <li>
+                            <a
+                                href="../index.html#three"
+                                class="button">
+
+                                Back to Featured Projects
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="index.html"
+                                class="button">
+
+                                View All Projects
+                            </a>
+                        </li>
+
+                    </ul>
 
                 </div>
 
