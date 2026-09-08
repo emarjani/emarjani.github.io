@@ -924,3 +924,21 @@ header.major p a:hover {
     }
 
 }
+
+.project-gallery > figure.project-gallery-one-column,
+.project-gallery > figure.project-gallery-single-column {
+    grid-column: span 1 !important;
+    justify-self: center;
+    width: 100%;
+    max-width: 34em;
+}
+
+/* On mobile, let it behave like the other gallery cards */
+@media screen and (max-width: 736px) {
+
+    .project-gallery > figure.project-gallery-one-column,
+    .project-gallery > figure.project-gallery-single-column {
+        max-width: none;
+    }
+
+}
